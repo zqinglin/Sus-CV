@@ -27,11 +27,19 @@
 \usepackage{hyperref}
 \usepackage{amssymb}
 
-% ---- 字体(系统已安装的字体) ----
-\setmainfont{Liberation Serif}
+% ---- 字体 ----
+% 原版观感:西文 = Times New Roman,中文 = 宋体,等宽 = Consolas。
+% 若本机装有原版字体,取消下面 4 行注释即可"精确复刻"(否则用下方免费等价体):
+% \setmainfont{Times New Roman}
+% \setCJKmainfont{SimSun}                 % Windows 宋体;macOS 改 Songti SC;跨平台可用 Source Han Serif SC
+% \setmonofont{Consolas}                  % 无则 Menlo(macOS)/ Cascadia Mono
+% \setCJKsansfont{Microsoft YaHei}        % 黑体系(可选,用于小节标题)
+%
+% 默认:跨平台可编译的免费等价体(观感接近原版,tectonic/多数发行版直接能用)
+\setmainfont{Liberation Serif}            % 与 Times 度量兼容
 \setsansfont{Liberation Sans}
 \setmonofont{DejaVu Sans Mono}[Scale=0.85]
-\setCJKmainfont{Noto Serif CJK SC}
+\setCJKmainfont{Noto Serif CJK SC}        % 思源宋体(宋体风格)
 \setCJKsansfont{Noto Serif CJK SC}
 
 % ---- 配色 ----
