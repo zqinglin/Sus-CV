@@ -4,6 +4,15 @@
 1. **`resume/`** — 一份 1:1 精排的中文技术简历 LaTeX 模板（脱敏/虚构信息版，含真公司 logo、超链接、配色）。
 2. **`resume-forge/`** — 一个 Claude Code **Skill**，把"改造简历成模板 / 语言润色 / 脱敏"的能力工程化。
 
+## 效果预览
+
+<p align="center">
+  <img src="docs/preview-1.png" width="48%" alt="简历第1页"/>
+  <img src="docs/preview-2.png" width="48%" alt="简历第2页"/>
+</p>
+
+> 上图为 `resume/resume_template.pdf` 的渲染效果(虚构信息版)。
+
 ## 快速上手（用简历模板）
 ```bash
 cd resume/

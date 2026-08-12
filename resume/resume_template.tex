@@ -36,11 +36,13 @@
 % \setCJKsansfont{Microsoft YaHei}        % 黑体系(可选,用于小节标题)
 %
 % 默认:跨平台可编译的免费等价体(观感接近原版,tectonic/多数发行版直接能用)
-\setmainfont{Liberation Serif}            % 与 Times 度量兼容
-\setsansfont{Liberation Sans}
-\setmonofont{DejaVu Sans Mono}[Scale=0.85]
-\setCJKmainfont{Noto Serif CJK SC}        % 思源宋体(宋体风格)
-\setCJKsansfont{Noto Serif CJK SC}
+% Scale 整体缩放字号以收进 2 页(想更大/更小改这个数即可)
+\newcommand{\FScale}{0.80}
+\setmainfont{Liberation Serif}[Scale=\FScale]   % 与 Times 度量兼容
+\setsansfont{Liberation Sans}[Scale=\FScale]
+\setmonofont{DejaVu Sans Mono}[Scale=0.80]
+\setCJKmainfont{Noto Serif CJK SC}[Scale=\FScale]  % 思源宋体(宋体风格)
+\setCJKsansfont{Noto Serif CJK SC}[Scale=\FScale]
 
 % ---- 配色 ----
 \definecolor{accent}{HTML}{1F5FBF}   % 主蓝
@@ -52,7 +54,7 @@
 \hypersetup{colorlinks=true, urlcolor=linktxt, linkcolor=linktxt}
 \setlength{\parindent}{0pt}
 \setlist{nosep, leftmargin=1.4em, topsep=1pt, itemsep=1pt}
-\linespread{1.06}
+\linespread{0.96}
 
 % ---- 内联等宽 ----
 \newcommand{\code}[1]{\colorbox{codegray}{\small\ttfamily #1}}
@@ -90,7 +92,7 @@
   \begin{itemize}[label=$\circ$]
   \item \textbf{1.0（Multi-Agent + ReAct 风格子 Agent）：} Coordinator（意图识别）$\rightarrow$ Planner $\rightarrow$ Research Team（Researcher / Coder 支持 MCP 动态扩展外部工具）$\rightarrow$ Reporter（汇总上下文生成最终报告）；Prompt 由 OpenAI Meta Prompt 生成。
   \item \textbf{2.0（Agent Teams + Middleware Chain + Skill System + Context Engineering）：}
-    \begin{itemize}[label=$\blacksquare$]
+    \begin{itemize}[label={\raisebox{0.15ex}{\scriptsize$\blacksquare$}}]
     \item \textbf{Agent Teams Harness：} 相比 1.0 五节点固定流水线，2.0 改为\textbf{单一 Lead Agent 统一决策}；\code{system\_prompt} \textbf{动态写入}——按当前启用的 Skill 列表、跨会话持久化记忆、Sub-agent 并发规则组装；Lead Agent 通过 \code{task} 工具触发 SubagentExecutor 新起独立 Agent 实例；\textbf{调度与执行双线程池分离}，最多 \textbf{3 并发 / 单任务超时 900s}；Sub-agent 继承父线程目录 + 复用父沙箱，每步\textbf{实时推流至前端}，完成后压缩摘要回传 Lead Agent。
     \item \textbf{Middleware Chain：} 1.0 上下文压缩 / 沙箱 / 记忆逻辑散落各处，改一处要变动多处；2.0 抽成 \textbf{11 层有序流水线}，新增或修改能力只对应层，Agent 推理代码零改动（ThreadData $\rightarrow$ Uploads $\rightarrow$ Sandbox $\rightarrow$ DanglingToolCall $\rightarrow$ Summarization $\rightarrow$ Todo $\rightarrow$ Title $\rightarrow$ Memory $\rightarrow$ ViewImage $\rightarrow$ SubagentLimit $\rightarrow$ Clarification）。
     \item \textbf{Skill System：} 每个 Skill 是一个目录，内含 \code{SKILL.md}；\code{system\_prompt} 只注入索引，Agent 按需 \code{read\_file} 渐进加载，避免全量注入 token 爆炸；支持自定义 Skill，\code{custom/} 下新增目录即可扩展。
@@ -160,7 +162,7 @@
 \item \textbf{我的职责：项目 owner，完全负责产品从 0 到 1 设计并落地以下内容}
   \begin{itemize}[label=$\circ$]
   \item 设计并实现多条 Agentic Workflow 链路与 Prompt 工程设计：
-    \begin{itemize}[label=$\blacksquare$]
+    \begin{itemize}[label={\raisebox{0.15ex}{\scriptsize$\blacksquare$}}]
     \item \textbf{Prompt 工程：} 覆盖意图分析、任务拆分（new\_page / new\_section / update\_section / new\_flow / bind 等 8 种动作）、数据源缺失检测等完整推理链路。
     \item \textbf{主流水线：} 负责意图分析，将用户输入与页面 UIDL 传入 Claude3.5\_v2，输出结构化 taskList（含 UI / Flow / Bind 三类任务）。
     \item \textbf{Controller：} 按优先级并行调度各子任务，通过 Promise.allSettled 实现多任务并发执行；封装 XML Patch 服务实现 UIDL 差量更新。
