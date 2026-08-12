@@ -25,7 +25,7 @@ tectonic resume_template.tex          # 或 xelatex
 
 ## 985/211 校徽素材库
 
-抬头学校名前的小三角可换成真校徽。素材库 `assets/emblems/` 已内置 **104 所高校校徽**（覆盖全部 39 所 985 + 绝大多数 211），顶尖高校为**矢量 PDF**、其余为 PNG。
+抬头学校名前的小三角可换成真校徽。素材库 `assets/emblems/` 已内置 **106 所高校校徽**（全部 39 所 985 + 绝大多数 211），顶尖高校为**矢量 PDF**、其余为 PNG。
 
 ```latex
 \emblem{sysu}~\CSchool     % 用法:slug 不带扩展名,矢量 pdf 优先、其次 png
