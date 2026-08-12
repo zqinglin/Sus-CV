@@ -21,7 +21,8 @@ description: >-
 核心资产：
 - `template/resume_template.tex` — 现成的中文 XeLaTeX 简历模板（蓝色小节、无边框色块、真 logo、内联代码框）。
 - `template/assets/logos/*.pdf` + `*.svg` — 公司 logo 素材库（抖音/B站/GitHub/字节/阿里/华为…），`\logo{名字}` 调用。
-- `references/logo_index.pdf` — logo 总览。
+- `template/assets/emblems/` — **985/211 校徽库**（104 所,顶校矢量 pdf、其余 png），`\emblem{sysu}` 调用,替换抬头学校前的小三角；slug 见 `references/emblem_index.pdf` / `assets/emblems/emblem_index.tsv`。
+- `references/logo_index.pdf` / `references/emblem_index.pdf` — logo / 校徽总览。
 - `PRINCIPLES.md` — 强简历写法十条原则（润色/新写时逐条对照）。
 - `scripts/` — 抽取、取 logo、编译脚本。
 
