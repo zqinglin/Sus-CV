@@ -1,21 +1,21 @@
 ---
 name: resume-forge
 description: >-
-  Reformat any resume into a clean, logo-rich LaTeX template AND polish its
-  language using distilled principles from a top-tier tech/AI resume. Use when
-  the user wants to (1) convert a resume (PDF / docx / text / screenshot) into a
-  reusable LaTeX template with 1:1 layout fidelity, (2) migrate their content
-  into this template, (3) anonymize/desensitize a resume, or (4) improve/polish
-  resume wording. Ships a ready LaTeX template, a company-logo asset library, and
-  helper scripts.
+  Adapt ANY existing resume (in any format/template — PDF / docx / text /
+  screenshot) INTO this polished LaTeX resume template: migrate the content,
+  fix the typesetting to a clean 2-page layout, and rewrite the wording to be
+  clear and concise following this template's proven writing method. Also
+  supports polishing and desensitizing. Use when the user gives a resume and
+  wants it re-typeset into this template / made cleaner / anonymized. Ships the
+  ready LaTeX template, a company-logo asset library, and helper scripts.
 ---
 
-# resume-forge — 把简历改造成模板 + 润色成好简历
+# resume-forge — 把任意简历适配进本模板 + 排版调优 + 按范式写清楚
 
-这个 Skill 把"写出一份强技术简历"的能力工程化。三种用法可单独或组合使用：
+这个 Skill 做的**不是**"把某份简历抽象成一个空模板"，而是：**把用户手上任意来源、任意模板的简历内容，迁移进本仓库这套精排模板里**，调好排版，并按这套模板的写法把内容写得**清晰明了**。三种用法可单独或组合：
 
-1. **改造迁移模板**：任意简历（PDF/docx/文本/截图）→ 1:1 版式的 LaTeX 模板。
-2. **润色**：按 `PRINCIPLES.md` 提升语言（量化、owner 化、机制化、去水分），**只改措辞不动事实**。
+1. **内容适配到本模板**：任意简历（PDF/docx/文本/截图）→ 用本模板重新精排（同一套版式：蓝色小节、无边框色块、真 logo、内联代码框），排到干净的 2 页。
+2. **按范式书写 / 润色**：套用 `PRINCIPLES.md` 的强简历写法（量化、owner 化、给机制、命名概念、去水分），把原内容改写得清晰明了——**只改措辞不动事实**。
 3. **脱敏**：把姓名/电话/邮箱/微信/GitHub 号/学校/个人域名换成顶部占位符或虚构值。
 
 核心资产：

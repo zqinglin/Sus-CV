@@ -2,7 +2,7 @@
 
 开源两样东西：
 1. **`resume/`** — 一份 1:1 精排的中文技术简历 LaTeX 模板（脱敏/虚构信息版，含真公司 logo、超链接、配色）。
-2. **`resume-forge/`** — 一个 Claude Code **Skill**，把"改造简历成模板 / 语言润色 / 脱敏"的能力工程化。
+2. **`resume-forge/`** — 一个 Claude Code **Skill**：把你手上**任意来源、任意模板**的简历内容，迁移进这套精排模板里，**调好排版**，并按这套模板的写法把内容写得**清晰明了**（附带润色与脱敏）。
 
 ## 效果预览
 
@@ -24,7 +24,7 @@ tectonic resume_template.tex          # 或 xelatex
 
 ## 用 Skill（Claude Code）
 把 `resume-forge/` 放进 `~/.claude/skills/`（或作为 plugin）。之后对 Claude 说：
-- "把这份简历做成 LaTeX 模板 / 1:1 复刻 / 脱敏" → 走**改造迁移**流程。
+- "把我这份简历（任意格式/模板）适配进这个模板 / 1:1 复刻 / 脱敏" → 走**内容迁移 + 排版调优**流程。
 - "润色我的简历" → 按 `resume-forge/PRINCIPLES.md`（强简历十条原则）改，**只改措辞不动事实**。
 
 ## 内容
