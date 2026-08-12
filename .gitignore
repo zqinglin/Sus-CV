@@ -1,0 +1,16 @@
+# LaTeX 编译中间产物
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+# 系统
+.DS_Store
+Thumbs.db
