@@ -1,7 +1,5 @@
 # Sus-CV — 1:1 精排的中文技术简历 LaTeX 模板
 
-> 名字 **Sus-CV** 取自 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）**，致敬其求职经验分享。详见文末[致谢](#致谢)。
-
 **主体是这套简历模板**：无边框色块小节、真公司 logo、985/211 校徽、超链接、内联代码框，一份好简历该有的排版细节都 1:1 复刻好了，改几个占位符就能用。
 
 - **`resume/`** — 现成的简历模板（`.tex` + 渲染好的 `.pdf`），公司 logo 库 + 985/211 校徽库都在里面。**这是主角。**
@@ -62,11 +60,15 @@ XeLaTeX（推荐 tectonic，自带自动装包）+ 字体 `Noto Serif CJK SC` / 
 
 ## 致谢
 
-- 感谢 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）** 的求职经验分享，以及其开源项目 **[ASu-skills](https://github.com/Hisn00w/ASu-skills)**（简历包装）——本项目的写作范式与不少排版取舍都受其启发。仓库名 **Sus-CV** 即取自「阿**酥**（**Su**）」，以此致敬。 🙏
+感谢以下小红书博主的公开分享与启发：
+
+- [**阿酥在coding**](https://xhslink.cn/m/2LHuLJZ30b2)：关于 Coding 面试经验的分享。
 
 **985/211 校徽素材库**站在这些开源工作之上，一并致谢：
-- **[pluwen](https://www.figma.com/@pluwen)** — 顶尖高校矢量校徽的原始设计者（Figma「中国大学矢量校徽合集」）。
-- **[soulteary/china-university-icon](https://github.com/soulteary/china-university-icon)**（CC0）— 将上述矢量整理为规整的 SVG 合集，本库的矢量校徽取自此。
-- **[xioajiumi/Chinese_Universities](https://github.com/xioajiumi/Chinese_Universities)** — 985/211 名录与校徽索引数据。
-- **[Wikipedia / Wikimedia](https://www.wikipedia.org)** 与 **[软科 ShanghaiRanking](https://www.shanghairanking.cn)** — 其余高校校徽来源。
-- 各校校徽版权归各高校所有，此处仅用于在简历上标注真实教育经历（nominative use）。
+
+- [**pluwen**](https://www.figma.com/@pluwen)：顶尖高校矢量校徽的原始设计者（Figma「中国大学矢量校徽合集」）；
+- [**soulteary/china-university-icon**](https://github.com/soulteary/china-university-icon)（CC0）：将上述矢量整理为规整的 SVG 合集，本库矢量校徽取自此；
+- [**xioajiumi/Chinese_Universities**](https://github.com/xioajiumi/Chinese_Universities)：985/211 名录与校徽索引数据；
+- [**Wikipedia / Wikimedia**](https://www.wikipedia.org) 与 [**软科 ShanghaiRanking**](https://www.shanghairanking.cn)：其余高校校徽来源。
+
+> 各校校徽版权归各高校所有，此处仅用于在简历上标注真实教育经历（nominative use）。
