@@ -54,6 +54,10 @@ tectonic resume_template.tex          # 或 xelatex
 XeLaTeX（推荐 tectonic，自带自动装包）+ 字体 `Noto Serif CJK SC` / `Liberation Serif` / `DejaVu Sans Mono`。
 取 logo 需 `cairosvg`（`python -m venv` 装，系统需 `libcairo`）。
 
+## 相关项目（友情链接）
+
+- [**Hisn00w/ASu-skills**](https://github.com/Hisn00w/ASu-skills) — 同样受阿酥求职简历经验启发做的简历包装工具（Codex / Claude Code 技能 + 大厂极简 HTML 模板），思路相近，可搭配参考。
+
 ## 许可 / 素材来源
 - 公司 logo 来自 [Simple Icons](https://simpleicons.org)；校徽来源见[致谢](#致谢)。
 - **校徽与公司 logo 均为各机构的注册商标，仅用于在简历上标注申请人真实的教育 / 工作经历（nominative use）**；本仓库不主张任何商标权利，商业或再分发用途请自行确认授权。
