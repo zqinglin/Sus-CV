@@ -66,22 +66,24 @@
 \newtcbox{\barbox}[1][barbg]{on line, boxrule=0pt, frame hidden, colback=#1, colframe=#1, arc=2pt, outer arc=2pt, left=6pt,right=6pt,top=1.6pt,bottom=1.6pt, width=\linewidth, halign=flush left, before skip=0pt, after skip=0pt}
 \newcommand{\cbar}[4][barbg]{\vspace{4pt}\barbox[#1]{#2\; \textbf{#3}\hspace{1em plus 1fill}{\small\color{gray!140} #4}}\vspace{2pt}\par}
 % ---- 真 logo(公司素材库在 assets/logos/*.pdf,矢量) ----
-\graphicspath{{assets/logos/}{assets/emblems/}}
+\graphicspath{{assets/logos/}{assets/emblems/}{assets/icons/}}
 \DeclareGraphicsExtensions{.pdf,.png}   % 校徽 slug 不带扩展名:矢量 pdf 优先,其次 png
 \newcommand{\logo}[1]{\raisebox{-0.28em}{\includegraphics[height=1.05em]{#1.pdf}}}
 \newcommand{\logobig}[1]{\raisebox{-0.32em}{\includegraphics[height=1.25em]{#1.pdf}}}
 % ---- 校徽(985/211 素材库在 assets/emblems/,slug 见 references/emblem_index.pdf) ----
 % 抬头学校前用 \emblem{sysu} 之类替代小三角。slug 速查:见 emblem_index.pdf / emblem_index.tsv
 \newcommand{\emblem}[1]{\raisebox{-0.32em}{\includegraphics[height=1.45em]{#1}}}
+% ---- 矢量小图标(assets/icons/,Bootstrap Icons,主题蓝;黑色版 _k):phone/email/cap/work/loc ----
+\newcommand{\icon}[1]{\raisebox{-0.15em}{\includegraphics[height=0.98em]{#1.pdf}}}
 
 \begin{document}
 
 % ============================== 抬头 ==============================
 {\Huge\sffamily\bfseries \CName}\\[3pt]
-\ding{37}~\CPhone \quad|\quad \ding{41}~\CEmail \quad|\quad \logo{wechat}~\CWeChat\\[2pt]
-\ding{110}~\textbf{20 years old · Full-Stack AI Agent Developer · Open to opportunities}\\[2pt]
+\icon{phone}~\CPhone \quad|\quad \icon{email}~\CEmail \quad|\quad \logo{wechat}~\CWeChat\\[2pt]
+\icon{work}~\textbf{20 years old · Full-Stack AI Agent Developer · Open to opportunities}\\[2pt]
 \logo{github}~github.com/\CGitHub~（\textbf{Apache Fory Committer | Maintainer of ByteDance/DeerFlow}）\\[2pt]
-\ding{115}~\CSchool ~|~ 2023年-2026年（本科跳级毕业）
+\icon{cap}~\CSchool ~|~ 2023年-2026年（本科跳级毕业）
 
 % ============================== 实习经历 ==============================
 \rsection{实习经历}

@@ -77,7 +77,7 @@ description: >-
 
 ## 环境坑（tectonic + CJK）
 
-- **fontawesome5 会让 tectonic 段错误**——别用；图标改用 `pifont`(`\ding{37}`电话/`\ding{41}`信封) + 真 logo `\includegraphics`。
+- **fontawesome5 会让 tectonic 段错误**——别用。图标走 **SVG→PDF**（和 logo/校徽同套）：从 Bootstrap Icons CDN 取 `telephone-fill`/`envelope-fill`/`mortarboard-fill`(学士帽)/`briefcase-fill`，把 `currentColor` 替成主题色后 `cairosvg` 转 PDF，用 `\icon{phone}` 调用（素材在 `template/assets/icons/`）。**别再用 pifont `\ding{}`**（信封/三角那几个很丑）。
 - 字体名要用**系统实际装的**（`TeX Gyre Termes` 常常没有 → 用 `Liberation Serif`）。
 - SVG→PDF 用 `cairosvg`（`python3 -m venv` 装，避开 PEP 668）；`libcairo.so.2` 需在系统里。
 - Simple Icons CDN：`https://cdn.simpleicons.org/<slug>` 返回带品牌色的 SVG。抖音 slug 常取不到，用 `tiktok`（同音符 logo）代。
