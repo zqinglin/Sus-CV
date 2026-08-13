@@ -1,8 +1,11 @@
-# resume-forge — 一份强技术简历 + 把"写好简历"蒸馏成的 Skill
+# Sus-CV — 1:1 精排的中文技术简历 LaTeX 模板
 
-开源两样东西：
-1. **`resume/`** — 一份 1:1 精排的中文技术简历 LaTeX 模板（脱敏/虚构信息版，含真公司 logo、超链接、配色）。
-2. **`resume-forge/`** — 一个 Claude Code **Skill**：把你手上**任意来源、任意模板**的简历内容，迁移进这套精排模板里，**调好排版**，并按这套模板的写法把内容写得**清晰明了**（附带润色与脱敏）。
+> 名字 **Sus-CV** 取自 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）**，致敬其求职经验分享。详见文末[致谢](#致谢)。
+
+**主体是这套简历模板**：无边框色块小节、真公司 logo、985/211 校徽、超链接、内联代码框，一份好简历该有的排版细节都 1:1 复刻好了，改几个占位符就能用。
+
+- **`resume/`** — 现成的简历模板（`.tex` + 渲染好的 `.pdf`），公司 logo 库 + 985/211 校徽库都在里面。**这是主角。**
+- **`resume-forge/`**（锦上添花）— 一个 Claude Code **Skill**：把你手上**任意来源、任意模板**的简历，迁移进这套模板、调好排版、按范式把内容写清楚（附润色与脱敏）。没有它也能直接用模板；有它就多一个自动化助手。
 
 ## 效果预览
 
@@ -35,7 +38,9 @@ tectonic resume_template.tex          # 或 xelatex
 
 <p align="center"><img src="docs/emblems-preview.png" width="80%" alt="985/211 校徽素材库预览"/></p>
 
-## 用 Skill（Claude Code）
+## resume-forge Skill（可选 · 锦上添花）
+> 只想要简历模板的话，这一节可以跳过——直接改 `resume/resume_template.tex` 就行。
+
 把 `resume-forge/` 放进 `~/.claude/skills/`（或作为 plugin）。之后对 Claude 说：
 - "把我这份简历（任意格式/模板）适配进这个模板 / 1:1 复刻 / 脱敏" → 走**内容迁移 + 排版调优**流程。
 - "润色我的简历" → 按 `resume-forge/PRINCIPLES.md`（强简历十条原则）改，**只改措辞不动事实**。
@@ -55,3 +60,8 @@ XeLaTeX（推荐 tectonic，自带自动装包）+ 字体 `Noto Serif CJK SC` / 
 - 公司 logo 来自 [Simple Icons](https://simpleicons.org)。
 - 校徽：顶尖高校矢量取自 [soulteary/china-university-icon](https://github.com/soulteary/china-university-icon)（CC0）；其余取自各校维基百科词条 / 软科排名页。
 - **校徽与公司 logo 均为各机构的注册商标，仅用于在简历上标注申请人真实的教育 / 工作经历（nominative use）**；本仓库不主张任何商标权利，商业或再分发用途请自行确认授权。
+
+## 致谢
+
+- 感谢 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）** 的求职经验分享，以及其开源项目 **[ASu-skills](https://github.com/Hisn00w/ASu-skills)**（简历包装）——本项目的写作范式与不少排版取舍都受其启发。
+- 仓库名 **Sus-CV** 即取自「阿**酥**（**Su**）」，以此致敬。 🙏
