@@ -57,11 +57,16 @@ XeLaTeX（推荐 tectonic，自带自动装包）+ 字体 `Noto Serif CJK SC` / 
 取 logo 需 `cairosvg`（`python -m venv` 装，系统需 `libcairo`）。
 
 ## 许可 / 素材来源
-- 公司 logo 来自 [Simple Icons](https://simpleicons.org)。
-- 校徽：顶尖高校矢量取自 [soulteary/china-university-icon](https://github.com/soulteary/china-university-icon)（CC0）；其余取自各校维基百科词条 / 软科排名页。
+- 公司 logo 来自 [Simple Icons](https://simpleicons.org)；校徽来源见[致谢](#致谢)。
 - **校徽与公司 logo 均为各机构的注册商标，仅用于在简历上标注申请人真实的教育 / 工作经历（nominative use）**；本仓库不主张任何商标权利，商业或再分发用途请自行确认授权。
 
 ## 致谢
 
-- 感谢 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）** 的求职经验分享，以及其开源项目 **[ASu-skills](https://github.com/Hisn00w/ASu-skills)**（简历包装）——本项目的写作范式与不少排版取舍都受其启发。
-- 仓库名 **Sus-CV** 即取自「阿**酥**（**Su**）」，以此致敬。 🙏
+- 感谢 **阿酥（[@Hisn00w](https://github.com/Hisn00w)）** 的求职经验分享，以及其开源项目 **[ASu-skills](https://github.com/Hisn00w/ASu-skills)**（简历包装）——本项目的写作范式与不少排版取舍都受其启发。仓库名 **Sus-CV** 即取自「阿**酥**（**Su**）」，以此致敬。 🙏
+
+**985/211 校徽素材库**站在这些开源工作之上，一并致谢：
+- **[pluwen](https://www.figma.com/@pluwen)** — 顶尖高校矢量校徽的原始设计者（Figma「中国大学矢量校徽合集」）。
+- **[soulteary/china-university-icon](https://github.com/soulteary/china-university-icon)**（CC0）— 将上述矢量整理为规整的 SVG 合集，本库的矢量校徽取自此。
+- **[xioajiumi/Chinese_Universities](https://github.com/xioajiumi/Chinese_Universities)** — 985/211 名录与校徽索引数据。
+- **[Wikipedia / Wikimedia](https://www.wikipedia.org)** 与 **[软科 ShanghaiRanking](https://www.shanghairanking.cn)** — 其余高校校徽来源。
+- 各校校徽版权归各高校所有，此处仅用于在简历上标注真实教育经历（nominative use）。
